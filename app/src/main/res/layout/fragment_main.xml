@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    tools:context="com.axxes.moneytizer.MainActivity$PlaceholderFragment">
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/amount"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/from" />
+
+    <Spinner
+        android:id="@+id/from_currency"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:entries="@array/currency" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/to" />
+
+    <Spinner
+        android:id="@+id/to_currency"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:entries="@array/currency" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/convert"/>
+
+    <TextView
+        android:id="@+id/result_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+</LinearLayout>
